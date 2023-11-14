@@ -144,23 +144,6 @@
     </header>
     <!-- header area end -->
 
-    <!-- popup search -->
-    <div class="search-popup">
-      <button class="close-search"><span class="far fa-times"></span></button>
-      <form action="#">
-        <div class="form-group">
-          <input
-            type="search"
-            name="search-field"
-            placeholder="Search Here..."
-            required
-          />
-          <button type="submit"><i class="far fa-search"></i></button>
-        </div>
-      </form>
-    </div>
-    <!-- popup search end -->
-
     <main class="home-2 main">
       <!-- hero slider -->
       <div class="hero-section hero-slider owl-carousel owl-theme">
@@ -841,10 +824,15 @@
                     </p>
                   </div>
                   <form
-                    method="post"
-                    action="/constox/assets/php/contact.php"
-                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    id="contact_form"
                   >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="6b6bdebd-fe3a-4c51-83fd-5111e80665f4"
+                    />
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
@@ -890,9 +878,6 @@
                     <button type="submit" class="theme-btn">
                       Send Message <i class="far fa-paper-plane"></i>
                     </button>
-                    <div class="col-md-12 mt-3">
-                      <div class="form-messege text-success"></div>
-                    </div>
                   </form>
                 </div>
               </div>
