@@ -2626,6 +2626,10 @@ sidebar css
   color: #6c7c89;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .widget .category-list a {
   display: block;
   padding: 10px 0;
